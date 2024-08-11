@@ -9,19 +9,19 @@ public class Date {
         day = 25;
     }
     public Date(int year){
-        this.year=year;
+        setYear(year);
         month = 07;
         day = 25;
     }
     public Date(int year,int month){
-        this.year=year;
-        this.month=month;
+        setYear(year);
+        setMonth(month);
         day = 25;
     }
     public Date(int year,int month,int day){
-        this.year=year;
-        this.month=month;
-        this.day=day;
+        setYear(year);
+        setMonth(month);
+        setDay(day);
     }
 
     public int getYear() {
@@ -78,5 +78,6 @@ public class Date {
             System.out.println("input valid date");
         }
     }
+
 
 }
